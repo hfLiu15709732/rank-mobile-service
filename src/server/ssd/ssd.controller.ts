@@ -12,7 +12,6 @@ export class SsdController {
   async addOne(): Promise<any> {
     let base = { name: 'weigao' };
     let res = await this.ssdService.addingOne(base);
-    console.log(res);
 
     return { name: '你好啊' };
   }

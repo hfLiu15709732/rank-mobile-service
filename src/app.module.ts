@@ -4,6 +4,8 @@ import { UserModule } from './server/user/user.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { SsdModule } from './server/ssd/ssd.module';
 import { User } from './entity/user.entity';
+import { ManufacturerModule } from './server/manufacturer/manufacturer.module';
+import { AuthModule } from './server/auth/auth.module';
 
 @Module({
   imports: [
@@ -20,6 +22,8 @@ import { User } from './entity/user.entity';
 
     UserModule,
     SsdModule,
+    ManufacturerModule,
+    AuthModule,
   ],
   controllers: [],
   providers: [],
